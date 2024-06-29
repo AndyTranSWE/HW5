@@ -1,0 +1,83 @@
+/*
+File: stylesheet.css
+GUI Assignment: Creating an Interactive Dynamic Table
+Andy Tran, UMass Lowell Computer Science, andy_tran1@student.uml.edu
+Copyright (c) 2024 by Andy. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AT on June 29, 2024 at 1:31 AM
+*/
+
+/*
+File description:
+This file contains the CSS which places the images for the board
+on the Scrabble game and maks the page readable.
+*/
+
+/* Overall page styling */
+
+body {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Section that controls the look of the board + general game aesthetic */
+
+#game-container {
+    text-align: center;
+}
+
+#board {
+    background-image: url('../resources/Scrabble_Board_OneLine.png');
+    width: 1129px;
+    height: 80px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.board-space {
+    width: 75px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rack {
+    background-image: url('../resources/scrabble-tile-holder-406774_640.png');
+    width: 640px;
+    height: 182px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.tile {
+    width: 75px;
+    height: 80px;
+    cursor: move;
+}
+
+/* Section that specifies button aesthetics */
+
+#controls {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+/* Section that details score signifier */
+
+#score {
+    font-size: 24px;
+    margin-top: 20px;
+}

@@ -1,0 +1,46 @@
+<!--
+File: index.html
+GUI Assignment: Implementing a Bit of Scrabble with Drag-and-Drop
+Andy Tran, UMass Lowell Computer Science, andy_tran1@student.uml.edu
+Copyright (c) 2024 by Andy. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AT on June 29, 2024 at 1:31 AM
+-->
+
+<!-- 
+File Description:
+This file contains where the board, rack, and controlling buttons are for the Scrabble game.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-Line Scrabble</title>
+    
+    <!-- Link to CSS file for styling. -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- Include jQuery and jQuery UI libraries. -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <!-- Main game container. -->
+    <div id="game-container">
+        <h1>1-Line Scrabble</h1>
+        <div id="board"></div>
+        <div id="rack"></div>
+        
+        <!-- Control buttons for game actions. -->
+        <div id="controls">
+            <button id="play-word">Play Word</button>
+            <button id="new-game">New Game</button>
+            <button id="new-tiles">Deal New Tiles</button>
+        </div>
+        <div id="score">Total Score: 0</div>
+    </div>
+    <!-- Link to external JavaScript file for game logic. -->
+    <script src="js/script.js"></script>
+</body>
+</html>
