@@ -4,7 +4,7 @@ GUI Assignment: Creating an Interactive Dynamic Table
 Andy Tran, UMass Lowell Computer Science, andy_tran1@student.uml.edu
 Copyright (c) 2024 by Andy. All rights reserved. May be freely copied or
 excerpted for educational purposes with credit to the author.
-updated by AT on June 29, 2024 at 1:31 AM
+updated by AT on June 29, 2024 at 1:45 AM
 */
 
 // File Description: 
@@ -56,7 +56,7 @@ $(document).ready(function() {
             if (randomPiece === null) {
                 break; // No more tiles available!
             }
-            var tile = $(`<img src="/../resources/Scrabble_Tiles/Scrabble_Tile_${randomPiece.letter}.jpg" 
+            var tile = $(`<img src="/resources/Scrabble_Tiles/Scrabble_Tile_${randomPiece.letter}.jpg" 
                 class="tile" data-letter="${randomPiece.letter}" data-value="${randomPiece.value}">`);
             $("#rack").append(tile);
         }
