@@ -56,7 +56,7 @@ $(document).ready(function() {
             if (randomPiece === null) {
                 break; // No more tiles available!
             }
-            var tile = $(`<img src="/resources/Scrabble_Tiles/Scrabble_Tile_${randomPiece.letter}.jpg" 
+            var tile = $(`<img src="../resources/Scrabble_Tiles/Scrabble_Tile_${randomPiece.letter}.jpg" 
                 class="tile" data-letter="${randomPiece.letter}" data-value="${randomPiece.value}">`);
             $("#rack").append(tile);
         }
